@@ -7,6 +7,20 @@ def fizzBuzz():
         if(i%3 != 0 and i%5 != 0):
             print(i)
             
+#FizzBuzz with recursion (decreasing)
+def fizzBuzzRecursion(number):
+    if(number == 0):
+        return 0
+    else:
+       if(number%3 == 0):
+            print("Fizz")
+       if(number%5 == 0):
+            print("Buzz")
+       if(number%3 != 0 and number%5 != 0):
+            print(number)
+
+    return fizzBuzzRecursion(number-1)
+            
 def isPalindrome(word):
     return word == reverse(word)
 
