@@ -42,3 +42,12 @@ def isVowel(letter):
             return True
 
     return False
+
+#given a string, return the sum of the numbers appearing in a string,ignoring all other char
+def sumString(sentence):
+    sum = 0
+    for i in range(len(sentence)):
+        if(sentence[i].isdigit()):
+            sum += int(sentence[i])
+
+    return sum
